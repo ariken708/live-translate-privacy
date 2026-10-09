@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Translate – Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.7; color: #1d1d1f; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: 0; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  .muted { color: #666; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; }
+  hr { margin: 48px 0; border: 0; border-top: 2px solid #eee; }
+  @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } th, td { border-color: #444; } .muted { color: #aaa; } }
+</style>
+</head>
+<body>
+<h1>Live Translate – Privacy Policy</h1>
+<p class="muted">Last updated: 2026-10-09 · Developer: Naoya Wada · Contact: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a><br><a href="#ja">日本語はこちら</a></p>
+
+<p>Live Translate is an Even Hub app for Even Realities G2 smart glasses. It listens to speech around you and shows live translated subtitles on the glasses. This policy explains what data the app handles. In short: <b>the developer does not run any server and never receives your audio, text, API key or any other data.</b></p>
+
+<h2>Data the app handles</h2>
+<table>
+  <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+  <tr><td>Microphone audio (glasses or phone microphone)</td><td>To translate speech while translation is running</td><td>Sent directly from your phone to OpenAI (api.openai.com) over an encrypted connection, using your own API key. Audio is not stored by the app.</td></tr>
+  <tr><td>Your OpenAI API key</td><td>To connect to OpenAI on your behalf</td><td>Stored only in the app's local storage on your phone. Sent only to OpenAI.</td></tr>
+  <tr><td>Translated and original text (subtitles)</td><td>To show subtitles and let you review/copy them</td><td>Stored only on your phone (up to the 20 most recent sessions). You can delete them in the app at any time.</td></tr>
+  <tr><td>Settings (target language, microphone, etc.)</td><td>To remember your preferences</td><td>Stored only on your phone.</td></tr>
+</table>
+
+<h2>Permissions</h2>
+<ul>
+  <li><b>g2-microphone</b>: captures speech through the glasses microphone while translation is running (tap to pause; it also pauses automatically when nobody speaks for a while).</li>
+  <li><b>phone-microphone</b>: used only if you switch to the phone microphone.</li>
+  <li><b>network</b>: connects only to <code>api.openai.com</code> (OpenAI) to translate audio. No other services, analytics or advertising are used.</li>
+</ul>
+
+<h2>Third party: OpenAI</h2>
+<p>Translation is performed by OpenAI's <code>gpt-realtime-translate</code> model under your own OpenAI account. OpenAI processes the audio according to its own terms and privacy policy (<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>). Usage fees are charged by OpenAI to the owner of the API key.</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>No developer server, no account, no tracking, no analytics, no advertising.</li>
+  <li>We do not sell or share any data. We never see your audio, subtitles or API key.</li>
+</ul>
+
+<h2>Your choices</h2>
+<p>You can pause translation at any time, delete subtitle history in the app, remove your API key by entering "-" in the key field, or uninstall the app to remove all locally stored data. Please let the people around you know when you are translating their speech, and follow local laws on recording conversations.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the updated version will be published at this address. Questions: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a></p>
+
+<hr>
+
+<h1 id="ja">Live Translate プライバシーポリシー</h1>
+<p class="muted">最終更新: 2026-10-09 · 開発者: Naoya Wada · 連絡先: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a></p>
+
+<p>Live Translate は Even Realities G2（スマートグラス）向けの Even Hub アプリで、周りの話し声を聞き取り、翻訳した字幕をグラスに表示します。このアプリが扱うデータについて説明します。要点: <b>開発者はサーバーを持っておらず、音声・文字・APIキーなどのデータを一切受け取りません。</b></p>
+
+<h2>扱うデータ</h2>
+<table>
+  <tr><th>データ</th><th>目的</th><th>送り先・保存先</th></tr>
+  <tr><td>マイクの音声（グラスまたはスマホのマイク）</td><td>翻訳中に話し声を訳すため</td><td>あなたのスマホから、あなた自身の APIキーで OpenAI（api.openai.com）へ暗号化した通信で直接送ります。アプリは音声を保存しません。</td></tr>
+  <tr><td>OpenAI の APIキー</td><td>OpenAI に接続するため</td><td>スマホ内のアプリの保存領域にだけ保存し、OpenAI にだけ送ります。</td></tr>
+  <tr><td>訳と原文の文字（字幕）</td><td>字幕の表示と、見返し・コピーのため</td><td>スマホ内にだけ保存します（直近20回まで）。アプリからいつでも消せます。</td></tr>
+  <tr><td>設定（訳す先の言語・マイクなど）</td><td>設定を覚えておくため</td><td>スマホ内にだけ保存します。</td></tr>
+</table>
+
+<h2>権限</h2>
+<ul>
+  <li><b>g2-microphone</b>: 翻訳中だけ、グラスのマイクで話し声を聞き取ります（タップで一時停止。話し声が続かないと自動で一時停止）。</li>
+  <li><b>phone-microphone</b>: スマホのマイクに切り替えたときだけ使います。</li>
+  <li><b>network</b>: 音声を訳すため <code>api.openai.com</code>（OpenAI）にだけ接続します。その他のサービス・分析・広告は使いません。</li>
+</ul>
+
+<h2>外部サービス: OpenAI</h2>
+<p>翻訳は、あなたの OpenAI アカウントのもとで OpenAI の <code>gpt-realtime-translate</code> モデルが行います。音声は OpenAI の規約とプライバシーポリシー（<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>）に従って処理されます。利用料金は OpenAI から APIキーの持ち主に請求されます。</p>
+
+<h2>行わないこと</h2>
+<ul>
+  <li>開発者のサーバー・アカウント登録・追跡・分析・広告はありません。</li>
+  <li>データの販売・共有はしません。開発者が音声・字幕・APIキーを見ることはありません。</li>
+</ul>
+
+<h2>あなたが選べること</h2>
+<p>翻訳はいつでも一時停止でき、字幕の記録はアプリから消せます。APIキーは欄に「-」を入れて保存すると消えます。アプリを削除すればスマホ内のデータもすべて消えます。周りの人の話し声を翻訳するときは、相手に知らせ、会話の録音・聴取に関する各地の法律に従ってください。</p>
+
+<h2>変更とお問い合わせ</h2>
+<p>このポリシーを変更した場合は、このページで公開します。お問い合わせ: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a></p>
+</body>
+</html>
