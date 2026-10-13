@@ -17,7 +17,7 @@
 </head>
 <body>
 <h1>Live Translate – Privacy Policy</h1>
-<p class="muted">Last updated: 2026-10-09 · Developer: Naoya Wada · Contact: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a><br><a href="#ja">日本語はこちら</a></p>
+<p class="muted">Last updated: 2026-10-13 · Developer: Naoya Wada · Contact: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a><br><a href="#ja">日本語はこちら</a></p>
 
 <p>Live Translate is an Even Hub app for Even Realities G2 smart glasses. It listens to speech around you and shows live translated subtitles on the glasses. This policy explains what data the app handles. In short: <b>the developer does not run any server and never receives your audio, text, API key or any other data.</b></p>
 
@@ -25,6 +25,7 @@
 <table>
   <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
   <tr><td>Microphone audio (glasses or phone microphone)</td><td>To translate speech while translation is running</td><td>Sent directly from your phone to OpenAI (api.openai.com) over an encrypted connection, using your own API key. Audio is not stored by the app.</td></tr>
+  <tr><td>Recognized original text</td><td>In "sentence by sentence" mode (default), to translate each sentence</td><td>Sent directly from your phone to OpenAI (api.openai.com, text model GPT-6 Luna) with your own API key, together with the previous few sentences for context.</td></tr>
   <tr><td>Your OpenAI API key</td><td>To connect to OpenAI on your behalf</td><td>Stored only in the app's local storage on your phone. Sent only to OpenAI.</td></tr>
   <tr><td>Translated and original text (subtitles)</td><td>To show subtitles and let you review/copy them</td><td>Stored only on your phone (up to the 20 most recent sessions). You can delete them in the app at any time.</td></tr>
   <tr><td>Settings (target language, microphone, etc.)</td><td>To remember your preferences</td><td>Stored only on your phone.</td></tr>
@@ -38,7 +39,7 @@
 </ul>
 
 <h2>Third party: OpenAI</h2>
-<p>Translation is performed by OpenAI's <code>gpt-realtime-translate</code> model under your own OpenAI account. OpenAI processes the audio according to its own terms and privacy policy (<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>). Usage fees are charged by OpenAI to the owner of the API key.</p>
+<p>Translation is performed by OpenAI's <code>gpt-realtime-translate</code> model and, in "sentence by sentence" mode, the <code>gpt-6-luna</code> text model, under your own OpenAI account. OpenAI processes the audio according to its own terms and privacy policy (<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>). Usage fees are charged by OpenAI to the owner of the API key.</p>
 
 <h2>What we do not do</h2>
 <ul>
@@ -55,7 +56,7 @@
 <hr>
 
 <h1 id="ja">Live Translate プライバシーポリシー</h1>
-<p class="muted">最終更新: 2026-10-09 · 開発者: Naoya Wada · 連絡先: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a></p>
+<p class="muted">最終更新: 2026-10-13 · 開発者: Naoya Wada · 連絡先: <a href="mailto:naoya.wada@omeroid.com">naoya.wada@omeroid.com</a></p>
 
 <p>Live Translate は Even Realities G2（スマートグラス）向けの Even Hub アプリで、周りの話し声を聞き取り、翻訳した字幕をグラスに表示します。このアプリが扱うデータについて説明します。要点: <b>開発者はサーバーを持っておらず、音声・文字・APIキーなどのデータを一切受け取りません。</b></p>
 
@@ -63,6 +64,7 @@
 <table>
   <tr><th>データ</th><th>目的</th><th>送り先・保存先</th></tr>
   <tr><td>マイクの音声（グラスまたはスマホのマイク）</td><td>翻訳中に話し声を訳すため</td><td>あなたのスマホから、あなた自身の APIキーで OpenAI（api.openai.com）へ暗号化した通信で直接送ります。アプリは音声を保存しません。</td></tr>
+  <tr><td>聞き取った原文の文字</td><td>「文ごとに訳す」方式（既定）で1文ずつ訳すため</td><td>あなたのスマホから、あなた自身の APIキーで OpenAI（api.openai.com・文章モデル GPT-6 Luna）へ直接送ります。訳の一貫性のため直前の数文も一緒に送ります。</td></tr>
   <tr><td>OpenAI の APIキー</td><td>OpenAI に接続するため</td><td>スマホ内のアプリの保存領域にだけ保存し、OpenAI にだけ送ります。</td></tr>
   <tr><td>訳と原文の文字（字幕）</td><td>字幕の表示と、見返し・コピーのため</td><td>スマホ内にだけ保存します（直近20回まで）。アプリからいつでも消せます。</td></tr>
   <tr><td>設定（訳す先の言語・マイクなど）</td><td>設定を覚えておくため</td><td>スマホ内にだけ保存します。</td></tr>
@@ -76,7 +78,7 @@
 </ul>
 
 <h2>外部サービス: OpenAI</h2>
-<p>翻訳は、あなたの OpenAI アカウントのもとで OpenAI の <code>gpt-realtime-translate</code> モデルが行います。音声は OpenAI の規約とプライバシーポリシー（<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>）に従って処理されます。利用料金は OpenAI から APIキーの持ち主に請求されます。</p>
+<p>翻訳は、あなたの OpenAI アカウントのもとで OpenAI の <code>gpt-realtime-translate</code> モデル（「文ごとに訳す」方式では文章モデル <code>gpt-6-luna</code> も）が行います。音声は OpenAI の規約とプライバシーポリシー（<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>）に従って処理されます。利用料金は OpenAI から APIキーの持ち主に請求されます。</p>
 
 <h2>行わないこと</h2>
 <ul>
